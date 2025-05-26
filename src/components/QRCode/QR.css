@@ -1,0 +1,68 @@
+.qr-code-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1em;
+  background-color: #fbfbfb;
+  padding: 2em;
+  gap: 2em;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  height: fit-content;
+  width: 16em;
+}
+
+.qr-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3c87fb;
+  width: 16em;
+  height: 16em;
+  border-radius: 10px;
+}
+
+.qr-img {
+}
+
+.texts-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.texts-div > p {
+  padding: 0;
+  margin: 0;
+}
+
+.primary-text {
+  font-weight: bolder;
+}
+
+.secondary-text {
+  opacity: 0.6;
+}
+
+.primary-text,
+.secondary-text {
+  font-size: 1.6rem;
+}
+
+/*PC View*/
+@media screen and (min-width: 1024px) {
+
+  .qr-code-container {
+    height: fit-content;
+    width: 20em;
+  }
+
+  .qr-div {
+    height: 20em;
+    width: 20em;
+  }
+
+  .primary-text,
+  .secondary-text {
+    font-size: 1.6rem;
+  }
+}
